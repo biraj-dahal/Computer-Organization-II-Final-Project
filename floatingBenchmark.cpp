@@ -32,3 +32,11 @@ int main() {
         }
 
     }
+
+    // 2 × 10^9 division (of double precision floating point constants)
+    for(register int i = 1; i <= 100000; i++){
+        for (register int j = 1; j <= 20000; j++){
+            res = dummyValue / dummyValue;
+        }
+
+    }
