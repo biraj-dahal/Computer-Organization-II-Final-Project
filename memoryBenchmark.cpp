@@ -27,3 +27,7 @@ int main() {
     for(long long int i = 1; i <= 5000000000; i++){
             dummyReadValue = myArr[i-1];
     }
+
+    auto end = chrono::high_resolution_clock::now();
+    auto diff = chrono::duration_cast<std::chrono::duration<double> >(end - start);
+    totalTime = diff.count();
