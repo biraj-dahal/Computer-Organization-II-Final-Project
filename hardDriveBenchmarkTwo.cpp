@@ -21,3 +21,6 @@ int main() {
     int oneTimeSize = 10000;
     long long int bytesWrittenSoFar = 0;
     double totalTime = 0;
+
+    auto start = chrono::high_resolution_clock::now();
+
