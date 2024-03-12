@@ -12,8 +12,8 @@ using namespace std;
 
 int main() {
     double totalTime;
-    int32_t dummyValue = 7;
-    int32_t res = 0;
+    double dummyValue = 8.4;
+    double res = 1.2;
 
-    // 10^10 additions (of integer constants)
+    // 10^10 additions (of double precision floating point constants)
     auto start = chrono::high_resolution_clock::now();
