@@ -17,3 +17,13 @@ int main() {
     double totalTime;
     
     auto start = chrono::high_resolution_clock::now();
+
+    // Write to 5 × 10^9 different array elements, 4 bytes each time
+    for(long long int i = 1; i <= 5000000000; i++){
+            myArr[i-1] = i;
+    }
+
+    // Read from 5 × 10^9 different array elements, 4 bytes each time
+    for(long long int i = 1; i <= 5000000000; i++){
+            dummyReadValue = myArr[i-1];
+    }
