@@ -24,4 +24,12 @@ int main() {
             res = dummyValue + dummyValue;
         }
 
+    }    
+    
+    // 5 × 10^9 multiplication (of integer constants)
+    for(register int i = 1; i <= 100000; i++){
+        for (register int j = 1; j <= 50000; j++){
+            res = dummyValue * dummyValue;
+        }
+
     }
