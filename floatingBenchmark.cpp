@@ -24,3 +24,11 @@ int main() {
         }
 
     }
+
+    // 5 × 10^9 multiplication (of double precision floating point constants)
+    for(register int i = 1; i <= 100000; i++){
+        for (register int j = 1; j <= 50000; j++){
+            res = dummyValue * dummyValue;
+        }
+
+    }
