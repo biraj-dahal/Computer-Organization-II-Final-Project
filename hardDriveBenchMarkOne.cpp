@@ -13,3 +13,12 @@ using namespace std;
 #define ANSI_COLOR_YELLOW  "\x1b[33m"
 #define ANSI_COLOR_RESET   "\x1b[0m"
 
+int main() {
+
+    ofstream outputFileHandler("dummyOneBillionBytes.txt");
+    long long int totalFileSize = 1000000000;
+    int oneTimeSize = 100;
+    long long int bytesWrittenSoFar = 0;
+    double totalTime = 0;
+
+    auto start = chrono::high_resolution_clock::now();
