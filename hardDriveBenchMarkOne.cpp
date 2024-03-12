@@ -22,3 +22,15 @@ int main() {
     double totalTime = 0;
 
     auto start = chrono::high_resolution_clock::now();
+
+    char outputBuffer[oneTimeSize];
+    memset(outputBuffer, 'A', oneTimeSize);
+
+
+    //Read a whole file of 10^9 bytes, 100 bytes each time
+    while(bytesWrittenSoFar < totalFileSize){
+        outputFileHandler << string(outputBuffer);
+        bytesWrittenSoFar = bytesWrittenSoFar + oneTimeSize;
+    }
+
+    outputFileHandler.close();
