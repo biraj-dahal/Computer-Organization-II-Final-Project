@@ -35,3 +35,14 @@ int main() {
     }
 
     outputFileHandler.close();
+
+    //Write 10^9 bytes to a file, 100 bytes each time
+    ifstream inputFileHandler("dummyOneBillionBytes.txt");
+    char inputBuffer[oneTimeSize];
+
+    while(!inputFileHandler.eof()){
+        inputFileHandler.read(inputBuffer, oneTimeSize);
+
+    }
+
+    inputFileHandler.close();
